@@ -28,8 +28,8 @@
   --clr-attention-40: #ffc100;
   --clr-attention-95: #fff8e0;
 
-  --clr-error-40: #c12143;
-  --clr-error-99: #faeef0;
+  --clr-error-40: var(--clr-accent-40);
+  --clr-error-99: var(--clr-accent-90);
 
   /* Font family */
   --ff-inter: 'Inter', sans-serif;
