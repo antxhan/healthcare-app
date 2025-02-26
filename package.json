@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-branch": "CURRENT_BRANCH=$(git branch --show-current) && git checkout main && git pull && git checkout $CURRENT_BRANCH && git merge main && git push",
+    "delete-branch": "CURRENT_BRANCH=$(git branch --show-current) && git checkout main && git pull && git push origin --delete $CURRENT_BRANCH && git branch -d $CURRENT_BRANCH && git branch"
   },
   "dependencies": {
     "react": "^19.0.0",
