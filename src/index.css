@@ -136,10 +136,6 @@ a {
   &:hover {
     color: var(--clr-accent-30);
   }
-
-  &:visited {
-    color: var(--clr-accent-40);
-  }
 }
 
 .heading-xxl {
