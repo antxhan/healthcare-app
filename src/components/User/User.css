@@ -1,0 +1,12 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    background-color: var(--clr-neutral-90);
+    padding: 0.5rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+  }
+}
