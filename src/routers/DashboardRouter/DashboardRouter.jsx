@@ -4,6 +4,7 @@ import Home from '../../pages/Dashboard/Home/Home';
 import Inbox from '../../pages/Dashboard/Inbox/Inbox';
 import Appointments from '../../pages/Dashboard/Appointments/Appointments';
 import Journal from '../../pages/Dashboard/Journal/Journal';
+import Settings from '../../pages/Dashboard/Settings/Settings';
 
 export const dashboardRouter = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export const dashboardRouter = createBrowserRouter([
       {
         path: '/journal',
         element: <Journal />,
+      },
+      {
+        path: '/settings',
+        element: <Settings />,
       },
     ],
   },
