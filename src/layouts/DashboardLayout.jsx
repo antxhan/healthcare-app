@@ -4,11 +4,11 @@ import DashboardContent from '../components/DashboardContent/DashboardContent';
 
 export default function DashboardLayout() {
   return (
-    <section className="dashboard">
+    <main className="dashboard">
       <DashboardNav />
       <DashboardContent>
         <Outlet />
       </DashboardContent>
-    </section>
+    </main>
   );
 }
