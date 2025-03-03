@@ -2,17 +2,14 @@ import './DashboardNav.css';
 import { NavLink } from 'react-router-dom';
 import { dashboardRouter } from '../../routers/DashboardRouter/DashboardRouter';
 import { capitalizeFirstLetter } from '../../utils/utils';
-import userSVG from '../../assets/user.svg';
+import User from '../User/User';
 
 export default function DashboardNav() {
   const routes = dashboardRouter.routes[0].children;
 
   return (
     <aside className="dashboard-nav">
-      <div className="user">
-        <img src={userSVG} alt="User avatar" />
-        <p className="user__name">John Doe</p>
-      </div>
+      <User />
       <hr />
       <nav>
         <ul>
