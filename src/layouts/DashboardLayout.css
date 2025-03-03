@@ -1,0 +1,21 @@
+@media (min-width: 1200px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: subgrid;
+
+    .dashboard-nav,
+    .dashboard-content {
+      border: 1px solid var(--clr-neutral-50);
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+
+    .dashboard-nav {
+      grid-column: span 3;
+    }
+
+    .dashboard-content {
+      grid-column: span 9;
+    }
+  }
+}

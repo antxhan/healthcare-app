@@ -1,3 +1,4 @@
+import './DashboardLayout.css';
 import { Outlet } from 'react-router-dom';
 import DashboardNav from '../components/DashboardNav/DashboardNav';
 import DashboardContent from '../components/DashboardContent/DashboardContent';
