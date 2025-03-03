@@ -1,27 +1,14 @@
 .dashboard-nav {
-  .user {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    img {
-      background-color: var(--clr-neutral-90);
-      padding: 0.5rem;
-      border-radius: 50%;
-      aspect-ratio: 1;
-    }
-  }
-
   hr {
-    margin-block: 1rem;
+    margin: 1rem 0.5rem;
   }
 
   nav {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    height: 100%; */
+    height: 90%;
   }
 
   ul {
@@ -30,7 +17,9 @@
     padding: 0;
 
     li {
-      padding-block: 0.25rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
       transition: background-color 200ms ease-out;
 
       &:hover,
@@ -39,10 +28,10 @@
       }
 
       a {
+        color: var(--clr-neutral-20);
         display: inline-block;
         text-decoration: none;
         width: 100%;
-        transition: color 200ms ease-out;
       }
     }
   }
