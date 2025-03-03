@@ -7,13 +7,15 @@ export default function DashboardNav() {
   const routes = dashboardRouter.routes[0].children;
 
   return (
-    <aside>
+    <aside className="dashboard-nav">
       <nav>
         <ul>
           {routes.map((route) => (
             <li key={route.path}>
               <NavLink to={route.path}>
-                {route.path === '/' ? 'Home' : capitalizeFirstLetter(route.path.slice(1))}
+                {route.path === '/'
+                  ? 'Home'
+                  : capitalizeFirstLetter(route.path.slice(1))}
               </NavLink>
             </li>
           ))}
