@@ -9,8 +9,6 @@ export default function DashboardNav() {
 
   return (
     <aside className="dashboard-nav">
-      <User />
-      <hr />
       <nav>
         <ul>
           {routes
