@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { dashboardRouter } from '../../routers/DashboardRouter/DashboardRouter';
 import { capitalizeFirstLetter } from '../../utils/utils';
 
-export default function DashboardNav({isOpen, onClose}) {
+export default function DashboardNav({ isOpen, onClose }) {
   const routes = dashboardRouter.routes[0].children;
 
   return (
@@ -14,7 +14,11 @@ export default function DashboardNav({isOpen, onClose}) {
             .filter((route) => route.path !== '/settings')
             .map((route) => (
               <li key={route.path}>
-                <NavLink to={route.path} onClick={onClose}>
+                <NavLink
+                  to={route.path}
+                  onClick={onClose}
+                  className={isOpen ? 'heading-xxl' : ''}
+                >
                   {route.path === '/'
                     ? 'Home'
                     : capitalizeFirstLetter(route.path.slice(1))}
@@ -24,7 +28,13 @@ export default function DashboardNav({isOpen, onClose}) {
         </ul>
         <ul>
           <li>
-            <NavLink to={'/settings'}>{'Settings'}</NavLink>
+            <NavLink
+              to={'/settings'}
+              onClick={onClose}
+              className={isOpen ? 'heading-xxl' : ''}
+            >
+              {'Settings'}
+            </NavLink>
           </li>
         </ul>
       </nav>
