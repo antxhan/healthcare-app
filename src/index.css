@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=League+Spartan:wght@900&family=Open+Sans:wght@300..800&display=swap');
 
 :root {
   /* Colors */
@@ -34,11 +34,13 @@
   /* Font family */
   --ff-inter: 'Inter', sans-serif;
   --ff-open-sans: 'Open Sans', sans-serif;
+  --ff-league-spartan: 'League Spartan', sans-serif;
 
   /* Font weight */
   --fw-light: 300;
   --fw-regular: 400;
   --fw-bold: 700;
+  --fw-black: 900;
 
   /* Font size */
   --fs-300: 14px;
@@ -76,7 +78,7 @@
   --ls-900: -1.25px;
 
   /* Misc. */
-  --header-height: 5rem
+  --header-height: 5rem;
 }
 
 body {
