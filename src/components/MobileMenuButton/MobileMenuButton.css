@@ -1,4 +1,5 @@
 .mobile-menu-btn {
+  --_hamburger-size: 2.5rem;
   --_hamburger-distance: 0.25rem;
   --_half-hamburger-distance-down: calc(var(--_hamburger-distance) / 2 + 50%);
   --_half-hamburger-distance-up: calc(
@@ -10,13 +11,19 @@
 
   background-color: transparent;
   border: none;
+  padding: 0;
+  width: var(--_hamburger-size);
+  aspect-ratio: 1;
 
   div {
     background-color: var(--clr-neutral-20);
     border-radius: 5px;
     height: 2px;
-    width: 2rem;
-    transition: transform 300ms ease;
+    width: 100%;
+
+    &:first-of-type {
+      align-self: end;
+    }
   }
 
   &.open {
