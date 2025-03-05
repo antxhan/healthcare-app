@@ -146,25 +146,25 @@ a {
 }
 
 .heading-xxl {
-  font-size: clamp(32px, 5vw, 48px);
+  font-size: clamp(var(--fs-750), 5vw, var(--fs-900));
   line-height: var(--lh-600);
   letter-spacing: var(--ls-600);
 }
 
 .heading-xl {
-  font-size: clamp(26px, 4vw, 36px);
+  font-size: clamp(var(--fs-650), 4vw, var(--fs-800));
   line-height: var(--lh-650);
   letter-spacing: var(--ls-650);
 }
 
 .heading-l {
-  font-size: clamp(24px, 3.5vw, 28px);
+  font-size: clamp(var(--fs-600), 3.5vw, var(--fs-700));
   line-height: var(--lh-600);
   letter-spacing: var(--ls-600);
 }
 
 .heading-m {
-  font-size: clamp(22px, 3vw, 24px);
+  font-size: clamp(var(--fs-550), 3vw, var(--fs-600));
   line-height: var(--lh-500);
   letter-spacing: var(--ls-500);
 }
@@ -181,7 +181,7 @@ a {
 }
 
 .preamble {
-  font-size: clamp(18px, 2.5vw, 22px);
+  font-size: clamp(var(--fs-450), 2.5vw, var(--fs-550));
   font-weight: var(--fw-light);
   line-height: var(--lh-500);
 }
