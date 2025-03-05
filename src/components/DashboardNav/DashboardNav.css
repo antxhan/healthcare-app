@@ -1,14 +1,10 @@
 .dashboard-nav {
-  hr {
-    margin: 1rem 0.5rem;
-  }
-
   nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    height: 90%;
+    height: 100%;
   }
 
   ul {
