@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
 
+  height: var(--header-height);
+
   .user__name {
     display: none;
   }
@@ -26,9 +28,5 @@
     .mobile-menu-btn {
       display: none;
     }
-  }
-
-  .header + .dashboard-nav {
-    display: none;
   }
 }

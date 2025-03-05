@@ -34,13 +34,30 @@
         display: inline-block;
         text-decoration: none;
         width: 100%;
+
+        &:focus-visible {
+          outline: none;
+        }
       }
     }
   }
 }
 
+.header + .dashboard-nav {
+  position: fixed;
+  inset: var(--header-height) 0 0 0;
+
+  background-color: var(--clr-neutral-100);
+  margin-inline: var(--_body-padding-inline);
+  padding: var(--_body-column-gap);
+}
+
 @media (min-width: 1200px) {
   .dashboard-nav {
     display: block;
+  }
+
+  .header + .dashboard-nav {
+    display: none;
   }
 }
