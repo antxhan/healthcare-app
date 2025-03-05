@@ -74,6 +74,9 @@
   --ls-750: -0.83px;
   --ls-800: -1px;
   --ls-900: -1.25px;
+
+  /* Misc. */
+  --header-height: 5rem
 }
 
 body {
