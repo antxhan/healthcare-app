@@ -10,21 +10,19 @@ export default function DashboardNav({ isOpen, onClose }) {
     <aside className={`dashboard-nav ${isOpen ? 'open' : ''}`}>
       <nav>
         <ul>
-          {routes
-            .filter((route) => route.path !== '/settings')
-            .map((route) => (
-              <li key={route.path}>
-                <NavLink
-                  to={route.path}
-                  onClick={onClose}
-                  className={isOpen ? 'heading-xxl' : ''}
-                >
-                  {route.path === '/'
-                    ? 'Home'
-                    : capitalizeFirstLetter(route.path.slice(1))}
-                </NavLink>
-              </li>
-            ))}
+          {routes.map((route) => (
+            <li key={route.path}>
+              <NavLink
+                to={route.path}
+                onClick={onClose}
+                className={isOpen ? 'heading-xxl' : ''}
+              >
+                {route.name
+                  ? route.name
+                  : capitalizeFirstLetter(route.path.slice(1))}
+              </NavLink>
+            </li>
+          ))}
         </ul>
         <ul>
           <li>
