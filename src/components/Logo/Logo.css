@@ -1,0 +1,9 @@
+.logo {
+  font-family: var(--ff-league-spartan);
+  font-weight: var(--fw-black);
+  transform: translateY(10%);
+
+  & span:last-of-type {
+    color: var(--clr-primary-40);
+  }
+}
