@@ -43,4 +43,8 @@
       display: none;
     }
   }
+
+  .header + .dashboard-nav {
+    display: none;
+  }
 }

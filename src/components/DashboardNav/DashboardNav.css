@@ -1,4 +1,10 @@
 .dashboard-nav {
+  display: none;
+
+  &.open {
+    display: block;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -30,5 +36,11 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .dashboard-nav {
+    display: block;
   }
 }
