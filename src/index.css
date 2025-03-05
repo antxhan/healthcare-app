@@ -83,6 +83,7 @@ body {
   --_body-columns: 4;
   --_body-column-gap: 1rem;
   --_body-padding-inline: 0rem;
+  --_body-margin-bottom: 1rem;
 
   display: grid;
   grid-template-columns:
@@ -97,7 +98,7 @@ body {
   font-size: var(--fs-400);
   font-weight: var(--fw-regular);
   line-height: var(--lh-400);
-  margin: 0 0 1rem;
+  margin: 0 0 var(--_body-margin-bottom);
 }
 
 #root {
@@ -106,7 +107,7 @@ body {
   grid-template-columns: subgrid;
   grid-template-rows: auto 1fr;
 
-  height: calc(100dvh - 1rem);
+  height: calc(100dvh - var(--_body-margin-bottom));
 
   > * {
     grid-column: content-start / content-end;
