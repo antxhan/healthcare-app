@@ -16,7 +16,7 @@ export default function Header() {
       <header className="header">
         <User />
         <Logo />
-        <MobileMenuButton onToggle={toggleMobileMenu} />
+        <MobileMenuButton isOpen={isMobileMenuOpen} onToggle={toggleMobileMenu} />
       </header>
       <DashboardNav isOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
     </>

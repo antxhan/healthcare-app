@@ -1,7 +1,13 @@
-export default function MobileMenuButton({ onToggle }) {
+import './MobileMenuButton.css';
+
+export default function MobileMenuButton({ isOpen, onToggle }) {
   return (
-    <button className="mobile-menu-btn" onClick={onToggle}>
-      Menu
+    <button
+      className={`mobile-menu-btn ${isOpen ? 'open' : ''}`}
+      onClick={onToggle}
+    >
+      <div></div>
+      <div></div>
     </button>
   );
 }
