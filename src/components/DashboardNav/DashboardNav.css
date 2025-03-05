@@ -50,6 +50,13 @@
   background-color: var(--clr-neutral-100);
   margin-inline: var(--_body-padding-inline);
   padding: var(--_body-column-gap);
+
+  &.open li {
+    overflow: clip;
+    a {
+      animation: slideIn 500ms ease forwards;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -59,5 +66,17 @@
 
   .header + .dashboard-nav {
     display: none;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0.8;
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY();
   }
 }
