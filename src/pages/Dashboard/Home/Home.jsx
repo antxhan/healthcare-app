@@ -8,7 +8,7 @@ export default function Home() {
     {
       name: 'Appointments',
       subtitles: ['Date & Time', 'Location'],
-      information: [['March 2, 2025 1PM', 'Karlolinska Institutet']],
+      information: [['March 2, 2025 1PM', 'Karolinska Institutet']],
     },
     {
       name: 'Medication',
