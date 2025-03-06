@@ -34,12 +34,15 @@
   footer {
     display: grid;
 
+    margin-top: 1rem;
+
     p {
       justify-self: center;
 
       background-color: var(--clr-attention-40);
       border-radius: 0.5rem;
       max-width: 60ch;
+      margin-top: 0;
       padding: 1rem;
     }
 
