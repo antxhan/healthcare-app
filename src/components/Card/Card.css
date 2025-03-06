@@ -31,6 +31,23 @@
     }
   }
 
+  footer {
+    display: grid;
+
+    p {
+      justify-self: center;
+
+      background-color: var(--clr-attention-40);
+      border-radius: 0.5rem;
+      max-width: 60ch;
+      padding: 1rem;
+    }
+
+    button {
+      justify-self: end;
+    }
+  }
+
   &.small main {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.125rem 0.25rem;
