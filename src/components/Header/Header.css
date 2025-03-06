@@ -3,7 +3,15 @@
   align-items: center;
   justify-content: space-between;
 
+  background-color: var(--clr-neutral-100);
   height: var(--header-height);
+
+  &:has(+ .dashboard-nav.open) {
+    position: fixed;
+    inset: 0 calc(var(--_body-padding-inline) + var(--_body-column-gap)) auto
+      calc(var(--_body-padding-inline) + var(--_body-column-gap));
+    z-index: 99;
+  }
 
   .user__name {
     display: none;

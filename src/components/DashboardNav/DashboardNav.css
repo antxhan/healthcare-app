@@ -47,11 +47,11 @@
 
 .header + .dashboard-nav {
   position: fixed;
-  inset: var(--header-height) 0 0 0;
+  inset: 0;
 
   background-color: var(--clr-neutral-100);
   margin-inline: var(--_body-padding-inline);
-  padding: var(--_body-column-gap);
+  padding: calc(var(--header-height) + 1rem) var(--_body-column-gap) var(--_body-column-gap);
 
   &.open li {
     overflow: clip;
