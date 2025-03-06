@@ -21,10 +21,9 @@ export default function Appointments() {
 
   return (
     <>
-      <header>
-        <PageTitle title={'Appointments'} />
+      <PageTitle title={'Appointments'}>
         <Button isPrimary={true} text={'Book'} />
-      </header>
+      </PageTitle>
       <CardList>
         {cardInformation.map((card, index) => (
           <li key={card.name + index}>
