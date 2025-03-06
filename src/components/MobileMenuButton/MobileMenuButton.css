@@ -8,6 +8,7 @@
 
   display: grid;
   gap: var(--_hamburger-distance);
+  justify-self: end;
 
   background-color: transparent;
   border: none;

@@ -1,7 +1,11 @@
 .header {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  /* border: 1px solid red; */
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   height: var(--header-height);
 
@@ -17,7 +21,7 @@
       display: inline-block;
     }
 
-    .user {
+    .user-wrapper {
       order: 1;
 
       .user__name {
@@ -28,5 +32,14 @@
     .mobile-menu-btn {
       display: none;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logo {
+    text-align: center;
   }
 }
