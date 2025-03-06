@@ -70,27 +70,15 @@
 }
 
 @media (max-width: 700px) {
-  /* body {
-    --_body-columns: 6;
-    --_body-padding-inline: 1rem;
-  } */
   .user-wrapper {
-    /* grid-column: span 2; */
-    /* align-items: center; */
-    /* justify-content: center; */
     min-width: 100px !important;
     .user {
       justify-content: start;
     }
-    /* background-color: red !important; */
   }
 }
 
 @media (max-width: 1200px) {
-  /* body {
-    --_body-columns: 6;
-    --_body-padding-inline: 1rem;
-  } */
   .user-wrapper {
     justify-self: start;
     .user {
