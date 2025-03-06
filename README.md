@@ -1,10 +1,7 @@
 # Link to [website](https://1178.netlify.app)
 
-### React + Vite
+## Team 9 - 1178
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+We have from our own survey and user interviews concluded that patients struggle with navigating 1177’s start page because of too many options and confusing asymmetrical layout. We have focused on simplifying how information is shown and how navigation works to address the design challenges within 1177.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Link to [Figma:](https://www.figma.com/design/9wokwM3nHa4trKzwIrYm1p/Sketch?node-id=28-459&p=f&t=S5qUMKPUoay7pBmk-0)
