@@ -1,0 +1,17 @@
+.card-grid-wrapper {
+  container-type: inline-size;
+}
+
+.card-grid {
+  --_min-card-width: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--_min-card-width), 1fr));
+  gap: 1rem;
+}
+
+@container (min-width: 850px) {
+  .card-grid {
+    --_min-card-width: 400px;
+  }
+}

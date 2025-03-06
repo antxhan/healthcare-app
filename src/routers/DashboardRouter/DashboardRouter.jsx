@@ -1,10 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom';
 import DashboardLayout from '../../layouts/DashboardLayout';
 import Home from '../../pages/Dashboard/Home/Home';
-import Inbox from '../../pages/Dashboard/Inbox/Inbox';
+import Record from '../../pages/Dashboard/Record/Record';
 import Appointments from '../../pages/Dashboard/Appointments/Appointments';
-import Journal from '../../pages/Dashboard/Journal/Journal';
-import Settings from '../../pages/Dashboard/Settings/Settings';
+import Results from '../../pages/Dashboard/Results/Results';
+import Medication from '../../pages/Dashboard/Medication/Medication';
+import Messages from '../../pages/Dashboard/Messages/Messages';
+import YourHealthCenter from '../../pages/Dashboard/YourHealthCenter/YourHealthCenter';
 
 export const dashboardRouter = createBrowserRouter([
   {
@@ -14,22 +16,32 @@ export const dashboardRouter = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+        name: 'Home',
       },
       {
-        path: '/inbox',
-        element: <Inbox />,
+        path: '/record',
+        element: <Record />,
       },
       {
         path: '/appointments',
         element: <Appointments />,
       },
       {
-        path: '/journal',
-        element: <Journal />,
+        path: '/results',
+        element: <Results />,
       },
       {
-        path: '/settings',
-        element: <Settings />,
+        path: '/medication',
+        element: <Medication />,
+      },
+      {
+        path: '/messages',
+        element: <Messages />,
+      },
+      {
+        path: '/your_health_center',
+        element: <YourHealthCenter />,
+        name: 'Your Health Center',
       },
     ],
   },

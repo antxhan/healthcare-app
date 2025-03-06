@@ -1,0 +1,33 @@
+.card {
+  background-color: var(--clr-neutral-99);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+
+    h2 {
+      margin-block: 0;
+    }
+  }
+
+  &.small main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.125rem 0.25rem;
+
+    h3, p {
+      margin: 0;
+    }
+
+    .card-information-row {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: subgrid;
+    }
+  }
+}
