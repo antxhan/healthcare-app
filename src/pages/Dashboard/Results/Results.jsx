@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PageTitle from '../../../components/PageTitle/PageTitle';
 import CardList from '../../../components/CardList/CardList';
 import Card from '../../../components/Card/Card';
@@ -26,6 +26,7 @@ export default function Results() {
       ],
     },
   ]);
+
   return (
     <>
       <PageTitle title={'Results'} />
