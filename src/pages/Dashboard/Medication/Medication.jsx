@@ -37,7 +37,6 @@ export default function Medication() {
           <li key={card.name + index}>
             <Card
               title={card.name}
-              subtitles={card.subtitles}
               information={card.information}
             />
           </li>
