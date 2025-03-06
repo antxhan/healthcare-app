@@ -1,6 +1,5 @@
 import './Card.css';
 import { Link } from 'react-router-dom';
-import Button from '../Button/Button';
 
 export default function Card({
   isSmall = false,
@@ -13,13 +12,16 @@ export default function Card({
       <header>
         <h2 className="heading-m">{title}</h2>
         {isSmall && (
-          <Link to={`/${title.split(' ').join('_').toLowerCase()}`} className='btn'>
+          <Link
+            to={`/${title.split(' ').join('_').toLowerCase()}`}
+            className="btn"
+          >
             See all
           </Link>
         )}
       </header>
       <main>
-        {isSmall && subtitles.length > 0 && information.length > 0 && (
+        {isSmall && subtitles.length > 0 && information.length > 0 ? (
           <>
             {subtitles.map((subtitle, index) => (
               <h3 key={index} className="heading-xs">
@@ -32,6 +34,19 @@ export default function Card({
                   <p key={colIndex}>{info}</p>
                 ))}
               </div>
+            ))}
+          </>
+        ) : (
+          <>
+            {information.map((infoObj, index) => (
+              <>
+                {Object.entries(infoObj).map(([key, value]) => (
+                  <div key={key} className="card-information-row">
+                    <h3 className="heading-xs">{key}</h3>
+                    <p>{value}</p>
+                  </div>
+                ))}
+              </>
             ))}
           </>
         )}

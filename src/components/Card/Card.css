@@ -15,14 +15,25 @@
     }
   }
 
-  &.small main {
+  main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.125rem 0.25rem;
+    gap: 0.5rem;
 
-    h3, p {
+    .card-information-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    h3,
+    p {
       margin: 0;
     }
+  }
+
+  &.small main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.125rem 0.25rem;
 
     .card-information-row {
       grid-column: 1 / -1;
