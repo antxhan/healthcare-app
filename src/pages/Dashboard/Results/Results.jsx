@@ -35,7 +35,6 @@ export default function Results() {
           <li key={card.name + index}>
             <Card
               title={card.name}
-              subtitles={card.subtitles}
               information={card.information}
             />
           </li>
