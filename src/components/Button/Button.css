@@ -1,0 +1,27 @@
+.btn {
+  border: 1px solid var(--clr-neutral-40);
+  border-radius: 5rem;
+  color: var(--clr-neutral-20);
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  outline: none;
+  text-decoration: none;
+  transition: all 300ms ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-primary-40);
+    color: var(--clr-neutral-100);
+  }
+}
+
+.primary-btn {
+  background-color: var(--clr-primary-40);
+  color: var(--clr-neutral-100);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-primary-90);
+    color: var(--clr-neutral-20);
+  }
+}
