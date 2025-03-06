@@ -1,5 +1,6 @@
 import './Card.css';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 
 export default function Card({
   isSmall = false,
@@ -10,9 +11,9 @@ export default function Card({
   return (
     <article className={`card ${isSmall ? 'small' : ''}`}>
       <header>
-        <h2 className="heading-l">{title}</h2>
+        <h2 className="heading-m">{title}</h2>
         {isSmall && (
-          <Link to={`/${title.split(' ').join('_').toLowerCase()}`}>
+          <Link to={`/${title.split(' ').join('_').toLowerCase()}`} className='btn'>
             See all
           </Link>
         )}
