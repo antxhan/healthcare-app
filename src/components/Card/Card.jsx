@@ -1,4 +1,5 @@
 import './Card.css';
+import '../Button/Button.css';
 import { Link } from 'react-router-dom';
 
 export default function Card({
