@@ -2,7 +2,7 @@
   /* display: flex; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+  /* width: 100%; */
   /* border: 1px solid red; */
   align-items: center;
   /* justify-content: space-between; */
