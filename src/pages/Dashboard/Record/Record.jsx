@@ -39,7 +39,7 @@ export default function Record() {
 
   return (
     <>
-      <PageTitle title={'Home'} />
+      <PageTitle title={'Record'} />
       <CardList>
         {cardInformation.map((card, index) => (
           <li key={card.name + index}>

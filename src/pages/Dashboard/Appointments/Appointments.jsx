@@ -1,7 +1,5 @@
-import React from 'react'
+import PageTitle from '../../../components/PageTitle/PageTitle';
 
 export default function Appointments() {
-  return (
-    <div>Appointments</div>
-  )
+  return <PageTitle title={'Appointments'} />;
 }
