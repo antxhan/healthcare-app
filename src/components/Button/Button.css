@@ -3,6 +3,8 @@
   border-radius: 5rem;
   color: var(--clr-neutral-20);
   cursor: pointer;
+  font-family: inherit;
+  font-size: var(--fs-400);
   padding: 0.25rem 1rem;
   outline: none;
   text-decoration: none;

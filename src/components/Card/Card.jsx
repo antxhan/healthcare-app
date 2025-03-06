@@ -1,6 +1,6 @@
 import './Card.css';
-import '../Button/Button.css';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 
 export default function Card({
   isSmall = false,
@@ -8,6 +8,10 @@ export default function Card({
   subtitles = [],
   information = [],
 }) {
+  const hasZeroRemainingPrescription = information.some(
+    (infoObj) => infoObj['Remaining prescription'] === 0
+  );
+
   return (
     <article className={`card ${isSmall ? 'small' : ''}`}>
       <header>
@@ -39,7 +43,7 @@ export default function Card({
           </>
         ) : (
           <>
-            {information.map((infoObj, index) => (
+            {information.map((infoObj) => (
               <>
                 {Object.entries(infoObj).map(([key, value]) => (
                   <div key={key} className="card-information-row">
@@ -52,6 +56,16 @@ export default function Card({
           </>
         )}
       </main>
+      {hasZeroRemainingPrescription && (
+        <footer className="card-warning">
+          <p>
+            We've noticed your prescription for Loratidin is expiring soon. To
+            ensure you don't miss a dose, you can quickly renew it here. We'll
+            send the request directly to your closest pharmacy.
+          </p>
+          <Button text={'Confirm renewal'}/>
+        </footer>
+      )}
     </article>
   );
 }

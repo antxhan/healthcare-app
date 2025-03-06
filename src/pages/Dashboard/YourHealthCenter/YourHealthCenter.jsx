@@ -1,7 +1,5 @@
-import React from 'react'
+import PageTitle from '../../../components/PageTitle/PageTitle';
 
 export default function YourHealthCenter() {
-  return (
-    <div>YourHealthCenter</div>
-  )
+  return <PageTitle title={'Your Health Center'} />;
 }

@@ -1,7 +1,5 @@
-import React from 'react'
+import PageTitle from '../../../components/PageTitle/PageTitle';
 
 export default function Messages() {
-  return (
-    <div>Messages</div>
-  )
+  return <PageTitle title={'Messages'} />;
 }
