@@ -10,7 +10,7 @@ export default function Card({
   return (
     <article className={`card ${isSmall ? 'small' : ''}`}>
       <header>
-        <h2 className="heading-l">{title}</h2>
+        <h2 className="heading-m">{title}</h2>
         {isSmall && (
           <Link to={`/${title.split(' ').join('_').toLowerCase()}`}>
             See all
