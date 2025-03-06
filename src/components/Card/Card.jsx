@@ -7,6 +7,7 @@ export default function Card({
   title,
   subtitles = [],
   information = [],
+  footerButtons = [],
 }) {
   const hasZeroRemainingPrescription = information.some(
     (infoObj) => infoObj['Remaining prescription'] === 0
@@ -56,16 +57,27 @@ export default function Card({
           </>
         )}
       </main>
-      {hasZeroRemainingPrescription && (
-        <footer className="card-warning">
-          <p>
-            We've noticed your prescription for Loratidin is expiring soon. To
-            ensure you don't miss a dose, you can quickly renew it here. We'll
-            send the request directly to your closest pharmacy.
-          </p>
-          <Button text={'Confirm renewal'}/>
-        </footer>
-      )}
+      <footer>
+        {hasZeroRemainingPrescription && (
+          <>
+            <p>
+              We've noticed your prescription for Loratidin is expiring soon. To
+              ensure you don't miss a dose, you can quickly renew it here. We'll
+              send the request directly to your closest pharmacy.
+            </p>
+            <div className="footer-buttons">
+              <Button text={'Renew'} />
+            </div>
+          </>
+        )}
+        {footerButtons.length > 0 && (
+          <div className="footer-buttons">
+            {footerButtons.map((text, index) => (
+              <Button key={text + index} text={text} />
+            ))}
+          </div>
+        )}
+      </footer>
     </article>
   );
 }

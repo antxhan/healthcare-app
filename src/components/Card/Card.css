@@ -43,7 +43,7 @@
       padding: 1rem;
     }
 
-    button {
+    .footer-buttons {
       justify-self: end;
     }
   }
