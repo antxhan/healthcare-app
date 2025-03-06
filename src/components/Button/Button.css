@@ -9,6 +9,7 @@
   outline: none;
   text-decoration: none;
   transition: all 300ms ease;
+  font-weight: bold;
 
   &:hover,
   &:focus-visible {

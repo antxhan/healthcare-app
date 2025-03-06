@@ -147,6 +147,10 @@ a {
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 .heading-xxl {
   font-size: clamp(var(--fs-750), 5vw, var(--fs-900));
   line-height: var(--lh-600);
