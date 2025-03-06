@@ -1,19 +1,21 @@
 import './DashboardNav.css';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { dashboardRouter } from '../../routers/DashboardRouter/DashboardRouter';
 import { capitalizeFirstLetter } from '../../utils/utils';
-import { useState } from 'react';
+import arrowSVG from '../../assets/arrow.svg';
 
 export default function DashboardNav({ isOpen, onClose }) {
   const routes = dashboardRouter.routes[0].children;
-  // language dropdown
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('English');
   const languages = ['English', 'Svenska'];
+
   const toggleLanguageDropdown = (e) => {
     e.preventDefault();
     setIsLanguageOpen(!isLanguageOpen);
   };
+
   const selectLanguage = (language) => {
     setSelectedLanguage(language);
     setIsLanguageOpen(false);
@@ -37,7 +39,6 @@ export default function DashboardNav({ isOpen, onClose }) {
             </li>
           ))}
         </ul>
-        {/* language dropdown */}
         <div className="language-selector-container">
           <div className={isOpen ? 'heading-xxl' : ''}>Language:</div>
           <div className="dropdown-wrapper">
@@ -46,7 +47,11 @@ export default function DashboardNav({ isOpen, onClose }) {
               onClick={toggleLanguageDropdown}
             >
               {selectedLanguage}
-              <span className="dropdown-arrow">^</span>
+              <img
+                className="dropdown-arrow"
+                src={arrowSVG}
+                alt="Select arrow"
+              />
             </button>
 
             {isLanguageOpen && (

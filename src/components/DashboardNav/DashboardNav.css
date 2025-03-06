@@ -14,6 +14,9 @@
   }
 
   ul {
+    display: grid;
+    gap: 0.25rem;
+
     list-style: none;
     margin: 0;
     padding: 0;
@@ -111,6 +114,7 @@
 }
 
 .dropdown-arrow {
+  width: 1rem;
 }
 
 .language-dropdown-menu {
