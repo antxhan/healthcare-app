@@ -1,5 +1,6 @@
 import './Card.css';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 
 export default function Card({
   isSmall = false,
@@ -12,7 +13,7 @@ export default function Card({
       <header>
         <h2 className="heading-m">{title}</h2>
         {isSmall && (
-          <Link to={`/${title.split(' ').join('_').toLowerCase()}`}>
+          <Link to={`/${title.split(' ').join('_').toLowerCase()}`} className='btn'>
             See all
           </Link>
         )}
