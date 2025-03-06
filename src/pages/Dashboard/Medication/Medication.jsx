@@ -6,6 +6,17 @@ import Card from '../../../components/Card/Card';
 export default function Medication() {
   const [cardInformation] = useState([
     {
+      name: 'EpiPen',
+      information: [
+        {
+          Date: 'March 2, 2025',
+          From: 'Jane Doe',
+          Dosage: 'When needed',
+          'Remaining prescription': 2,
+        },
+      ],
+    },
+    {
       name: 'Loratidin',
       information: [
         {
@@ -26,7 +37,6 @@ export default function Medication() {
           <li key={card.name + index}>
             <Card
               title={card.name}
-              subtitles={card.subtitles}
               information={card.information}
             />
           </li>
